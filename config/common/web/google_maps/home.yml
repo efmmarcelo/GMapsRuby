@@ -1,0 +1,19 @@
+locators:
+  accept_cookies_btn:
+    xpath: ".//button[@jsname='higCR']"
+    wait: timeouts.defaults.medium
+  search_location_input:
+    id: "searchboxinput"
+    wait: timeouts.defaults.medium
+  search_location_btn:
+    id: "searchbox-searchbutton"
+    wait: timeouts.defaults.medium
+  directions_btn:
+    xpath: ".//button[contains(@jsaction,'placeActions.directions')]"
+    wait: timeouts.defaults.medium
+  search_result_title:
+    xpath: "//h1[contains(@class,'header')][//*[text()='$0']]"
+    wait: timeouts.defaults.medium
+  destinationField1:
+    xpath: "//*[@id='directions-searchbox-1']//input[contains(@aria-label,'$0')]"
+    wait: timeouts.defaults.medium

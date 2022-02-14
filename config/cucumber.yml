@@ -1,0 +1,13 @@
+qat: &qat >
+  --format QAT::Formatter::Console
+  --format html --out public/index.html
+  --format json --out public/cucumber.json
+  --format junit --out public/
+  --strict
+
+standard: &standard >
+  --format html --out public/index.html
+
+flat: &flat --format pretty
+
+default: *qat
